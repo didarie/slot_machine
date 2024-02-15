@@ -22,7 +22,7 @@ body {
 }
 
 .fish {
-    position: absolute;
+    position: fixed;
     top: 35%;
     left: 55%;
     transform: rotate(18deg);
@@ -178,13 +178,11 @@ th, td {
 
 @media only screen and (max-width: 700px) {
     .sun {
-        position: absolute;
         top: -25%;
         left: -10%;
     }
     
     .fish {
-        position: absolute;
         top: 65%;
         left: 40%;
         transform: rotate(62deg);
@@ -237,16 +235,12 @@ th, td {
 
 @media only screen and (max-width: 450px) {
     .sun {
-        position: absolute;
-        top: -15%;
-        left: -10%;
+        left: -20%;
     }
     
     .fish {
-        position: absolute;
         top: 65%;
         left: 10%;
-        transform: rotate(62deg);
         max-width: 30em; 
         max-height: 30em;
     }
