@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <title>fruit machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="sun"></div>
+    <img class="fish" src="./resources/img/fish.png"/> -->
+    <div id="game-field">
+        <div id="game">
+            <div id="reels">
+            <div class="reel"></div>
+            <div class="reel"></div>
+            <div class="reel"></div>
+        </div>
+        <div id="stats">
+            <span class="stat">Cash:<strong><span id="creditsText"></span></strong></span>
+            <span class="stat">Win:<strong><span id="winnerPaidText"></span></strong></span>
+        </div>
+        </div>
+        <div id="table">
+            <table>
+                <tr>
+                  <th></th> 
+                  <th><div class="mini-reel-1  red-1"></div></th>
+                  <th><div class="mini-reel-2 red-2"></div></th> 
+                  <th><div class="mini-reel-1 brown-1"></div></th>
+                  <th><div class="mini-reel-2 brown-2"></div></th>
+                  <th><div class="mini-reel-1 beige-1"></div></th> 
+                  <th><div class="mini-reel-2 beige-2"></div></th>
+                  <th><div class="mini-reel-1 blue-1"></div></th>
+                  <th><div class="mini-reel-2 blue-2"></div></th> 
+                  <th><div class="mini-reel-1 dark-blue-1"></div></th>
+                  <th><div class="mini-reel-2 dark-blue-2"></div></th>
+                </tr>
+                <tr>
+                  <td class="tabletext">Three</td>
+                  <td>100</td> 
+                  <td>90</td>
+                  <td>80</td>
+                  <td>70</td> 
+                  <td>60</td>
+                  <td>50</td>
+                  <td>40</td> 
+                  <td>30</td>
+                  <td>20</td>
+                  <td>10</td> 
+                </tr>
+                <tr>
+                    <td class="tabletext">Two</td>
+                    <td>10</td> 
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td> 
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td> 
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td> 
+                  </tr>
+                  <tr>
+                    <td class="tabletext">Two + Wild</td>
+                    <td></td> 
+                    <td>18</td>
+                    <td>16</td>
+                    <td>14</td> 
+                    <td>12</td>
+                    <td>10</td>
+                    <td>8</td> 
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td> 
+                  </tr>
+              </table>
+        </div>
+        <div id="controls">
+            <button id="button1"><span class="text">spin reels</span></button>
+            <button id="button2">pay<br/>table</button>
+        </div>
+    </div>
+    <script src="./resources/js/index.js"></script>
+</body>
+
+</html>

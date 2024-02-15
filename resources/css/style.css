@@ -1,0 +1,220 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #3B4875;
+    color: #3D3D3D;
+    font-family: "Yuji Syuku", serif;
+}
+
+/*.sun {
+    background-color: #F55400;
+    border-radius: 100%;
+    position: absolute;
+    top: -20%;
+    left: -5%;
+    width: 25em;
+    height: 25em;
+}
+
+.fish {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: rotate(18deg);
+    max-width: 80%; 
+    max-height: 80%;
+}*/
+
+#game-field {
+    display: block;
+    background-color: #F2F2F2;
+    width: 37em;
+    height: 21em;
+    border-radius: 1.8em;
+    padding: 2em;
+    transition: all 0.5s ease;
+}
+
+#game {
+    display: block;
+}
+
+#table {
+    display: none;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1.5em;
+    transition: all 0.5s ease;
+    border: white  2px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 3em;
+    height: 3em;
+    color: #3D3D3D;
+    text-align: center;
+    border: white  1px solid !important;
+}
+
+.mini-reel-1{
+    border-radius: 50%;
+    width: 60%;
+    padding-top: 60%;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+}
+
+.mini-reel-2 {
+    border-radius: 50%;
+    width: 70%;
+    padding-top: 70%;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+}
+
+.red-1 {
+    border: #F55400 0.5em solid;
+}
+
+.red-2 {
+    background-color: #F55400;
+}
+
+.brown-1 {
+    border: #8C5A4F 0.5em solid;
+}
+
+.brown-2 {
+    background-color: #8C5A4F;
+}
+
+.beige-1 {
+    border: #BF9C8F 0.5em solid;
+}
+
+.beige-2 {
+    background-color: #BF9C8F;
+}
+
+.blue-1 {
+    border: #66708C 0.5em solid;
+}
+
+.blue-2 {
+    background-color: #66708C;
+}
+
+.dark-blue-1 {
+    border: #2F3A59 0.5em solid;
+}
+
+.dark-blue-2 {
+    background-color: #2F3A59;
+}
+
+.tabletext {
+    font-size: 0.7rem;
+}
+
+#reels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reel {
+    border: #F55400 1em solid;
+    border-radius: 50%;
+    width: 25%;
+    padding-top: 25%;
+    transition: all 0.5s ease;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 0.7em 0;
+    transition: all 0.5s ease;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#button1, #button2 {
+    font-family: "Yuji Syuku", serif;
+    display: inline-block;
+    text-align: center;
+    background-color: #3D3D3D;
+    color:#F2F2F2;
+    border: none;
+    padding: 0;
+    border-radius: 0.5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#button1 {
+    font-size: 1.5rem;
+    padding: 1em 4em;
+    margin-right: 1em;
+}
+
+#button2 {
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+}
+
+@media only screen and (max-width: 700px) {
+    #game-field {
+        width: 16em;
+        height: 10em;
+        padding: 1em;
+    }
+
+    .reel {
+        border: #F55400 0.5em solid;
+    }
+
+    #stats {
+        font-size: 0.7rem;
+        padding: 1em 0;
+    }
+
+    #button1 {
+        font-size: 0.5rem;
+        margin-right: 0.5em;
+        padding: 1em 6em;
+    }
+    
+    #button2 {
+        font-size: 0.5rem;
+        padding: 1em 1.2em;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 1.5em;
+        font-size: 0.5rem;
+        
+    }
+
+    .tabletext {
+        font-size: 0.3rem;
+    }
+
+    table, th, td {
+        border: #3B4875 1px solid;
+    }
+
+}
+
+
