@@ -13,7 +13,7 @@ body {
 .sun {
     background-color: #F55400;
     border-radius: 100%;
-    position: absolute;
+    position: fixed;
     top: -20%;
     left: -5%;
     width: 25em;
@@ -235,6 +235,7 @@ th, td {
 
 @media only screen and (max-width: 450px) {
     .sun {
+        top: -30%;
         left: -20%;
     }
     
