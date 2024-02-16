@@ -44,10 +44,35 @@ body {
 
 #game {
     display: block;
+    width: 100%;
+    height: 75%;
+}
+
+#reels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reel {
+    border: #F55400 1em solid;
+    border-radius: 50%;
+    width: 25%;
+    padding-top: 25%;
+    transition: all 0.5s ease;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 0.7em;
+    transition: all 0.5s ease;
 }
 
 #table {
     display: none;
+    width: 100%;
+    height: 75%;
 }
 
 table {
@@ -63,7 +88,7 @@ th, td {
     height: 3em;
     color: #3D3D3D;
     text-align: center;
-    border: white  1px solid !important;
+    border: white  1px solid;
 }
 
 .mini-reel-1{
@@ -126,27 +151,6 @@ th, td {
     font-size: 0.7rem;
 }
 
-#reels {
-    display: flex;
-    justify-content: space-between;
-}
-
-.reel {
-    border: #F55400 1em solid;
-    border-radius: 50%;
-    width: 25%;
-    padding-top: 25%;
-    transition: all 0.5s ease;
-}
-
-#stats {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    padding: 0.7em 0;
-    transition: all 0.5s ease;
-}
-
 #controls {
     display: flex;
     justify-content: center;
@@ -202,7 +206,6 @@ th, td {
 
     #stats {
         font-size: 0.7rem;
-        padding: 1em 0;
     }
 
     #button1 {
@@ -218,9 +221,8 @@ th, td {
 
     table {
         width: 100%;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.2em;
         font-size: 0.5rem;
-        
     }
 
     .tabletext {
@@ -229,8 +231,8 @@ th, td {
 
     table, th, td {
         border: #3B4875 1px solid;
+            
     }
-
 }
 
 @media only screen and (max-width: 450px) {

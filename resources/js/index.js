@@ -1,8 +1,72 @@
-let reel = ["Wild", "Star", "Bell", "Shell", "Seven", "Cherry", "Bar", "King", "Queen", "Jack"];
+let credits = 100;
+let win = 0;
 
-let spin = Array.from({length: 3}, () => Math.round(Math.random() * 11));
+/*let creditsText = document.querySelector("#creditsText");
+let winnerPaidText = document.querySelector("#winnerPaidText");
+let button1 = document.querySelector("#button1");
+let button2 = document.querySelector("#button2");
+let game = document.querySelector("#game");
+let table = document.querySelector("#table");*/
+
+let reel = ["red-em", "red-fill", "brown-em", "brown-fill", "beige-em", "beige-fill", "blue-em", "blue-fill", "dark-blue-em", "dark-blue-fill"];
+let spin = Array.from({length: 3}, () => Math.round(Math.random() * 10));
+
+/*button1.onclick = ;*/
+button2.onclick = tableBlock;
+
+function tableBlock() {
+    if (game.style.display === "block") {
+        game.style.display = "none";
+        table.style.display = "block";
+    } else {
+        table.style.display = "none";
+        game.style.display = "block";
+    }
+
+}
+
+function spin_reel(reels, spins) {
+    console.log(spins);
+    let array = spins.map((spin, reel) => reels[reel][spin]);
+
+    for(let a in array) {
+        switch (array[a]) {
+            case "red-em":
+                return "red";
+                break;
+        }
+    }
+    return array;
+}
 
 
+console.log(spin_reel([reel, reel, reel], spin));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function fruit(reels, spins) {
     // Code here
     let array = spins.map((spin, reel) => reels[reel][spin]);
@@ -46,7 +110,5 @@ function fruit(reels, spins) {
         }
     }
 
-    return score;
-}
-
-console.log(fruit([reel, reel, reel], spin));
+    winnerPaidText.innerText = score;
+};*/
