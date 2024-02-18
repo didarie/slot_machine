@@ -50,15 +50,21 @@ body {
 
 #reels {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.reel {
-    border: #F55400 1em solid;
+.reel{
+    background-color: transparent;
+    border-color: #3D3D3D; 
+    border: 1em solid;
     border-radius: 50%;
     width: 25%;
     padding-top: 25%;
     transition: all 0.5s ease;
+    
 }
 
 #stats {
@@ -156,9 +162,9 @@ th, td {
     justify-content: center;
 }
 
-#button1, #button2 {
+#button1, #button2, #button3 {
     font-family: "Yuji Syuku", serif;
-    display: inline-block;
+    display: block;
     text-align: center;
     background-color: #3D3D3D;
     color:#F2F2F2;
@@ -178,6 +184,12 @@ th, td {
 #button2 {
     font-size: 1.2rem;
     padding: 0.5em 1em;
+}
+
+#button3 {
+    display: none;
+    font-size: 1.5rem;
+    padding: 1em 4.2em;
 }
 
 @media only screen and (max-width: 700px) {
@@ -200,12 +212,13 @@ th, td {
         padding: 1em;
     }
 
-    .reel {
-        border: #F55400 0.5em solid;
+    .reel{
+        border: 0.5em solid;
     }
 
     #stats {
         font-size: 0.7rem;
+        padding: 1em;
     }
 
     #button1 {
@@ -219,6 +232,11 @@ th, td {
         padding: 1em 1.2em;
     }
 
+    #button3 {
+        font-size: 0.9rem;
+        padding: 0.7em 2.5em;
+    }
+
     table {
         width: 100%;
         margin-bottom: 1.2em;
@@ -230,7 +248,7 @@ th, td {
     }
 
     table, th, td {
-        border: #3B4875 1px solid;
+        border: white 1px solid;
             
     }
 }
